@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comphy"
+version = "1.0.0"
+description = "Shared helpers for the Computational Physics exercise notebooks"
+authors = [{ name = "Jeppe Thybo" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "torch",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+graphs = ["torch_geometric"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

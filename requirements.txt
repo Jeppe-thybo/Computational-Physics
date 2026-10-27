@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+scikit-learn
+torch
+torch_geometric
+tqdm
+jupyterlab
+ipywidgets
+# installs the shared helper package in src/comphy
+-e .
